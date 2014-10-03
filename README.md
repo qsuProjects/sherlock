@@ -1,4 +1,4 @@
 #sherlock
 ========
 
-Utility scripts to facilitate use of [sherlock.stanford.edu](sherlock.stanford.edu)
+Utility scripts to facilitate use of [sherlock.stanford.edu](http://www.sherlock.stanford.edu)
