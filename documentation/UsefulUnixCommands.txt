@@ -1,0 +1,72 @@
+Useful Unix Commands
+
+cd [path]
+changes current directory to path
+
+cd ..
+moves current directory up one folder
+
+cd 
+changes current directory to home directory
+a shortcut for cd /home/your SUNetID
+can also be accessed via cd ~
+
+cd $HOME
+changes current directory to user home directory
+a shortcut for cd /home/your SUNetID
+can also be accessed via cd ~
+
+
+cd $PI_HOME 
+changes current directory to shared PI directory
+a shortcut for cd /share/PI/manishad
+
+cd $SCRATCH 
+changes current directory to user scratch directory
+a shortcut for cd /scratch/users/your SUNetID/
+
+cd $PI_SCRATCH
+changes current directory to shared PI scratch directory
+a shortcut for cd /scratch/PI/manishad/
+
+cd $LOCAL_SCRATCH
+changes current directory to current machine's scratch directory
+
+rm [file | pathToFile/file]
+removes (deletes) file
+
+ex: 
+rm simulation.log
+-removes a file called simulation.log in current directory
+
+rm /scratch/PI/manishad/simulation.log
+-removes a file called simulation.log in $PI_SCRATCH
+
+cp [file | pathToFile/file] [pathToDestination]
+copies file specified in first argument to destination specified in second argument
+
+mkdir [newFolder | pathToNewFolder/newFolder]
+creates a new folder
+
+* is a wildcard character and can be used with cp, rm
+ex: rm *.csv will delete all files with the .csv extension in the current directory
+
+Sherlock Commands
+
+sacct
+returns a table showing info on all recent jobs run from our account
+
+squeue
+returns a table showing info on all running and pending jobs
+
+squeue -u SUNetID
+returns a table showing info on all jobs submitted by SUNetID's owner
+
+ml load
+loads a module
+
+ml load R
+loads R, makes it usable
+
+srun [sbatchFile]
+runs an .sbatch file
